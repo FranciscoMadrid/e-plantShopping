@@ -246,7 +246,8 @@ function ProductList({ onHomeClick }) {
         textDecoration: 'none',
     }
     const styleDisable = {
-        backgroundColor: '#4d4d4d'
+        backgroundColor: '#4d4d4d',
+        cursor: 'not-allowed' 
     }
 
     const handleHomeClick = (e) => {

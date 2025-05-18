@@ -37,6 +37,8 @@ const calculateTotalAmount = () => {
 
   // Calculate total cost based on quantity for an item
   const calculateTotalCost = (item) => {
+    const costAmount = parseFloat(item.cost.substring(1)); // remove currency symbol
+    return item.quantity * costAmount;
   };
 
   return (
